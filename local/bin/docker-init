@@ -2,5 +2,15 @@
 
 set -e
 
-docker-install -r -u -c targetcli
+echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> Installing required packages"
+PKG_LIB="targetcli py3-gobject3"
+PKG_DEV=""
+docker-install -r -u ${PKG_LIB} ${PKG_DEV}
+echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> OK"
+echo
+
+echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> Uninstalling unnecessary packages"
+docker-install -d -c ${PKG_DEV}
+echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> OK"
+echo
 

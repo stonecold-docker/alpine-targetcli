@@ -1,11 +1,23 @@
 # alpine-targetcli
 
 #### [alpine-x64-targetcli](https://hub.docker.com/r/forumi0721alpinex64/alpine-x64-targetcli/)
-[![](https://images.microbadger.com/badges/version/forumi0721alpinex64/alpine-x64-targetcli.svg)](https://microbadger.com/images/forumi0721alpinex64/alpine-x64-targetcli "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/forumi0721alpinex64/alpine-x64-targetcli.svg)](https://microbadger.com/images/forumi0721alpinex64/alpine-x64-targetcli "Get your own image badge on microbadger.com") [![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinex64/alpine-x64-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpinex64/alpine-x64-targetcli/) [![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinex64/alpine-x64-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpinex64/alpine-x64-targetcli/)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpinex64/alpine-x64-targetcli/latest)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpinex64/alpine-x64-targetcli/latest)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpinex64/alpine-x64-targetcli/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinex64/alpine-x64-targetcli)
+![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinex64/alpine-x64-targetcli)
 #### [alpine-aarch64-targetcli](https://hub.docker.com/r/forumi0721alpineaarch64/alpine-aarch64-targetcli/)
-[![](https://images.microbadger.com/badges/version/forumi0721alpineaarch64/alpine-aarch64-targetcli.svg)](https://microbadger.com/images/forumi0721alpineaarch64/alpine-aarch64-targetcli "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/forumi0721alpineaarch64/alpine-aarch64-targetcli.svg)](https://microbadger.com/images/forumi0721alpineaarch64/alpine-aarch64-targetcli "Get your own image badge on microbadger.com") [![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpineaarch64/alpine-aarch64-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpineaarch64/alpine-aarch64-targetcli/) [![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpineaarch64/alpine-aarch64-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpineaarch64/alpine-aarch64-targetcli/)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpineaarch64/alpine-aarch64-targetcli/latest)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpineaarch64/alpine-aarch64-targetcli/latest)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpineaarch64/alpine-aarch64-targetcli/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpineaarch64/alpine-aarch64-targetcli)
+![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpineaarch64/alpine-aarch64-targetcli)
 #### [alpine-armhf-targetcli](https://hub.docker.com/r/forumi0721alpinearmhf/alpine-armhf-targetcli/)
-[![](https://images.microbadger.com/badges/version/forumi0721alpinearmhf/alpine-armhf-targetcli.svg)](https://microbadger.com/images/forumi0721alpinearmhf/alpine-armhf-targetcli "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/forumi0721alpinearmhf/alpine-armhf-targetcli.svg)](https://microbadger.com/images/forumi0721alpinearmhf/alpine-armhf-targetcli "Get your own image badge on microbadger.com") [![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinearmhf/alpine-armhf-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpinearmhf/alpine-armhf-targetcli/) [![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinearmhf/alpine-armhf-targetcli.svg?style=flat-square)](https://hub.docker.com/r/forumi0721alpinearmhf/alpine-armhf-targetcli/)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpinearmhf/alpine-armhf-targetcli/latest)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpinearmhf/alpine-armhf-targetcli/latest)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpinearmhf/alpine-armhf-targetcli/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinearmhf/alpine-armhf-targetcli)
+![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinearmhf/alpine-armhf-targetcli)
 
 
 
@@ -16,17 +28,12 @@
 * Architecture : x64,aarch64,armhf
 * Appplication : [targetcli](http://linux-iscsi.org/wiki/Targetcli)
     - targetcli is the single-node Linux-IO Target management shell by Datera, Inc..
-* Base Image
-    - [forumi0721/alpine-x64-base](https://hub.docker.com/r/forumi0721/alpine-x64-base/)
-    - [forumi0721/alpine-aarch64-base](https://hub.docker.com/r/forumi0721/alpine-aarch64-base/)
-    - [forumi0721/alpine-armhf-base](https://hub.docker.com/r/forumi0721/alpine-armhf-base/)
 
 
 
 ----------------------------------------
 #### Run
 
-* x64
 ```sh
 docker run -d \
            --net=host \
@@ -35,28 +42,6 @@ docker run -d \
            -v /target:/etc/target \
            -v /targetcli:/root/.targetcli \
            forumi0721alpinex64/alpine-x64-targetcli:latest
-```
-
-* aarch64
-```sh
-docker run -d \
-           --net=host \
-           --privileged \
-           -v /lib/modules:/lib/modules \
-           -v /target:/etc/target \
-           -v /targetcli:/root/.targetcli \
-           forumi0721alpineaarch64/alpine-aarch64-targetcli:latest
-```
-
-* armhf
-```sh
-docker run -d \
-           --net=host \
-           --privileged \
-           -v /lib/modules:/lib/modules \
-           -v /target:/etc/target \
-           -v /targetcli:/root/.targetcli \
-           forumi0721alpinearmhf/alpine-armhf-targetcli:latest
 ```
 
 
@@ -101,11 +86,4 @@ docker run -d \
 | ENV                | Description                                      |
 |--------------------|--------------------------------------------------|
 | -                  | -                                                |
-
-
-
-----------------------------------------
-* [forumi0721alpinex64/alpine-x64-targetcli](https://hub.docker.com/r/forumi0721alpinex64/alpine-x64-targetcli/)
-* [forumi0721alpineaarch64/alpine-aarch64-targetcli](https://hub.docker.com/r/forumi0721alpineaarch64/alpine-aarch64-targetcli/)
-* [forumi0721alpinearmhf/alpine-armhf-targetcli](https://hub.docker.com/r/forumi0721alpinearmhf/alpine-armhf-targetcli/)
 
