@@ -8,3 +8,5 @@ fi
 
 touch /.init
 
+mkdir -p /conf.d /conf.d/targetcli /conf.d/root
+
