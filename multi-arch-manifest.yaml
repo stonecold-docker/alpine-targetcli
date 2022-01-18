@@ -1,0 +1,10 @@
+image: forumi0721/alpine-targetcli:latest
+manifests:
+  - image: forumi0721/alpine-targetcli:x64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: forumi0721/alpine-targetcli:aarch64
+    platform:
+      architecture: arm64
+      os: linux
