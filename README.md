@@ -6,10 +6,8 @@
 
 ----------------------------------------
 ### x64
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721/alpine-targetcli/x64)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-targetcli/x64)
 ### aarch64
-![Docker Image Version (tag aarch64 semver)](https://img.shields.io/docker/v/forumi0721/alpine-targetcli/aarch64)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-targetcli/aarch64)
 
 
